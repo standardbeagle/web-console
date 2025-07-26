@@ -1,0 +1,36 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "terminal-example",
+  "outputfilename": "terminal-example",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Standard Beagle",
+    "email": "contact@standardbeagle.com"
+  },
+  "info": {
+    "companyName": "Standard Beagle",
+    "productName": "Terminal Example",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright © 2024 Standard Beagle",
+    "comments": "Example Wails app using @standardbeagle/web-console"
+  },
+  "build": {
+    "targets": [
+      {
+        "platform": "windows/amd64",
+        "outputFileName": "terminal-example.exe"
+      },
+      {
+        "platform": "darwin/amd64",
+        "outputFileName": "terminal-example"
+      },
+      {
+        "platform": "linux/amd64",
+        "outputFileName": "terminal-example"
+      }
+    ]
+  }
+}

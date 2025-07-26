@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Terminal } from '../src/components/Terminal';
+import { Terminal } from '@standardbeagle/web-console';
 
 const App: React.FC = () => {
   const [terminalUrl] = useState('ws://localhost:8080/ws/terminal');
